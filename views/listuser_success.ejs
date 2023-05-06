@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "UTF-8">
+        <meta name = "viewport" content = "width = device-width, height = device-height, initial-scale = 1">
+		<title>login</title>
+        
+        <link href = "/public/semantic.min.css" rel = "stylesheet">
+        <script src = "/public/semantic.min.js"></script>
+        <style>
+           
+            html {
+                width : 100%;
+                height : 100%;
+            }
+            
+            body {
+                width : 100%;
+                height : 100%;
+                color : #000;
+                background-color : #fff;
+            }
+            .container{
+                width: 100%;
+                height: 100%;
+                display:flex;
+                flex-flow: column wrap;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            #cardbox {
+                width: 70%;
+            }
+            
+            #iconImage {                
+                display:inline;
+                width: 2em;
+                height:2em;
+            }
+            
+            #titleText {
+                font-size: 1.4em;
+                font-weight : bold;
+                color : #777;
+            }
+            
+            #contentsText {
+                color : #999;
+            }
+            
+            #form1 {
+                padding: 1em;
+            }
+            
+            .row {
+                height : 3em;                
+            }
+            
+            .col1 {
+                width : 5em;
+            }
+            
+            .inputbox{
+                width: 20em;
+            }
+            
+            #buttonContainer {
+                padding-top: 0.6em;
+                text-align: right;
+            }            
+            .bottomArea {
+                background-color: rgba(242, 248, 255. 255) !important;
+                
+            }
+        </style>
+	</head>
+	<body>
+    <div class="container">  <!--로그인 하는게 홈페이지 중앙에 오게 함-->
+        <br>
+        <div class="ui raised segment">
+            <a class= "ui blue ribbon label">사용자 리스트</a>
+            <br><br>
+            <div class="ui two column grid">
+                
+                <% for(var i=0;i<results.length;i++){%>
+                                     
+               <div class="column">
+                    <div class="ui blue fluid card">
+                        <div class="content">
+                            <div class="header"><%=results[i]._doc.name%></div>
+                            
+                            <div class="description">
+                                <br>
+                                <p>가수입니다.</p>
+                                <p>친구입니다.</p>
+                            </div> 
+                             <div class="meta">
+                            <span class = "right floated time"><%=results[i]._doc.age%></span>
+                                <span class="category"><%=results[i]._doc.id%></span>
+                        </div>
+                        <div class="bottomArea extra content">
+                            <div class="right floated author">
+                                <img class="ui avatar image" src="/public/images/author.jpg">010-1000-1000
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                </div>
+                <%}%>
+            </div>
+        </div>
+    </div>
+	</body>
+</html>   

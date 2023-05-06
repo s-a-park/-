@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <title>테스트 페이지</title>
+        <style>
+            .csst{
+                color:ivory;
+                display:block;
+            }
+        
+        
+        
+        </style>
+    </head>
+    <body style="color:ivory; background-color:slategray">
+        <h1>로그인 성공</h1>
+        <div><p>사용자 아이디:<%=id%> </p></div>  <!--변수를 만들어놓고 값을 대입해서 보이게하는 방법=뷰엔진-->
+        <div><p>사용자 이름: </p></div>
+        <%for(var i=0; i<100;i++){%>
+        <a href='/public/login.html'>다시 로그인하기</a>
+        <% }%> <!--100번 출력하기-->
+    </body>
+</html>
