@@ -1,0 +1,78 @@
+/*위드스 하이트 */
+body{width: auto;
+     height: auto;
+     margin: 10vh 90% 10vh 20vw;
+    }
+#top_img{  width:150px; height:30px;
+           }
+
+#top_line{  width:1150px;}
+
+div#top{  width:auto;
+    height: 40px;}
+
+.slide1{width: 1150px; height: 500px;}
+
+ul.nav{width: 1150px; height: 30px;}
+
+#foot_home,#foot, #foot_share, #foot_forum{ width:1155px; height:110px;}
+
+section.notice{width: 600px; height: 200px;}
+
+section.pop{width: 575px; height: 200px;}
+
+button.wiki{width: 100px; height: 60px;}
+
+div.dt2{width: 575px; height: 500px;}
+
+div.wiki_dt{width: 550px; height: 500px;}
+
+div.wiki_dt2{width:600px;}
+
+ul.wiki_dt_ul{width: 450px; height: 400px;}
+
+
+
+.frame{width: 1150px; height: 800px;}
+
+.table{width: 1150px; height: auto;}
+
+#ulist{
+    width: 575px;
+    height: 1900px;
+    float: left;
+}
+
+#olist{
+    width: 575px;
+    height: 900px;
+    float: right;
+}
+
+
+
+div.pop{
+        width: 575px;
+        height: 400px;
+        float: right;
+}
+
+div#buttons{
+    width: 1150px;
+    height: 50px;
+}
+
+div#dt1_div{
+    width: auto;
+    height: 40px;
+}
+
+#logo{
+    width: 150px;
+    height: 70px;
+}
+
+#topImg{
+    width: 100px;
+    height: 70px;
+}

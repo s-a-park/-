@@ -1,0 +1,182 @@
+/*패딩, 마진, 플로트, 디스플레이 등*/
+body{ margin-left:100px;
+margin-right: 100px;
+padding-left: 50px;
+padding-right: 50px;
+text-align: center ;
+}
+
+li.li_top_img{ margin-left: 0px;}
+
+img#top_img{
+    margin-left: 10px;
+    padding-top: 5px;
+    float: left;
+ }
+
+#top_line{margin-top:10px;
+          margin-left: 20px;
+          margin-right: 20px;
+   }
+
+div#top{
+       
+        margin-left: 20px;
+        
+        
+       }
+      
+ul.nav{ 
+        margin-left: 0px;
+        padding-left: 0px;
+      }
+     
+
+
+.li_word{padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 20px;
+        float: left;}
+
+#slide_img{ margin-left: 20px;
+position: relative;}
+
+.slide1{ text-align: center;}
+
+section.notice{padding-left: 50px;
+        padding-bottom: 50px;
+        padding-top: 50px;}
+
+section.pop{padding-right: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 200px;
+        margin-top: -250px;
+        padding-left: 50px;
+
+}
+section.notice{float: left; text-align: left; }
+section.pop{float: right; text-align: left; }
+
+li.notice{float:none;
+          margin-top: 20px;}
+li.pop{float:none;
+        margin-top: 15px;}
+
+h1.pop{padding-left: 200px;}
+
+ol#pop{margin-left: 100px;
+       }
+
+h1.notice{padding-left: 130px;}
+
+div.wiki_btn{
+        margin-top: 30px;
+}
+
+h1.wiki{float: left;
+        margin-left: 30px;
+        margin-top: 0px;
+}
+
+button.wiki{
+        float: left;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+html{position: relative;}
+
+h2.dt1{
+   float: left;
+   
+   margin-left: 40px;
+
+}
+
+h5.dt1{  
+        float: left;
+        margin-top: 35px;
+        margin-left: 10px;
+        
+}
+div.wiki_dt2{
+        padding-right: 50px;
+        padding-top: 60px;
+}
+
+li.wiki_dt{padding-top: 10px;}
+
+li.wiki_dt2{
+        
+        padding-top: 10px;
+        margin-left: 10px;
+        
+}
+
+h2.dt_name{ margin-top: -120px;
+margin-right: 350px;}
+
+ul.wiki_dt_ul{margin-left: -100px;
+               margin-top: 20px;}
+
+
+
+div.wiki_link{margin-top: -320px;
+                margin-right: 400px;}
+
+.frame{margin-bottom: 50px;
+        margin-left: 5px;
+margin-top:100px;}
+
+div#dt1_div{ margin-top: 80px;}
+
+.table{margin-left: 20px;}
+
+
+
+#bin{
+             margin-top: 100px;
+             margin-bottom: 50px;
+             padding-top: 20px;
+             padding-bottom: 20px;
+}
+
+#foot_home{
+        margin-top: 100px;
+        margin-left: -45px;
+        float: bottom;
+}
+#foot{
+        margin-top: 905px;
+        margin-left: -45px;
+        float: bottom;
+}
+#foot_share{
+        margin-top: 100px;
+        margin-left: -45px;
+        float: bottom;
+}
+#foot_forum{
+        margin-top: 905px;
+        margin-left: -45px;
+        float: bottom;
+}
+
+div.dt2{
+        margin-top: -100px;
+}
+
+div#buttons{
+        float: left;
+        margin-left: 10px;
+       
+}
+#upButton{
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+
+}
+
+

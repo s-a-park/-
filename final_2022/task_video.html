@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html id="wiki">
+    <head>
+        <title>상명 데이터 공유 사이트 Wiki 목적 정렬</title>
+        
+        <link rel="stylesheet" type="text/css" href="style-size.css"/>
+        <link rel="stylesheet" type="text/css" href="style-lay.css"/>
+        <link rel="stylesheet" type="text/css" href="style-pre.css"/>
+        <script type="text/javascript" src="data.js"></script>
+        
+    </head>
+    <body>
+        <a id="header"></a><header>
+           
+           <nav>
+               <div id="top">
+                    <ul class="nav">
+                      <li class="li_top_img">
+                          <a href="https://www.smu.ac.kr/ko/index.do">
+                             <img id= "top_img" src="sangmyunglogo.jpg"  alt="상명대학교 데이터 공유 사이트">
+                          </a>
+                     </li>
+
+                      <li class="li_word"><a class="no2" href="final_exam.html">HOME</a></li>
+
+                      <li class="li_word"><a class="no2" href="wiki.html">Data Wiki</a></li>
+
+                      <li class="li_word"><a class="no2" href="share.html">Share Hub</a></li>
+
+                      <li class="li_word"><a class="no2" href="colo.html">Colosseum</a></li>
+
+                      <li class="li_word"><a class="no2" href="forum.html">Forum</a></li>
+
+                      <li> <a href="https://swai.smu.ac.kr/"><img id= "top_img" src="logo.JPG"></a></li>
+                   </ul>
+       
+               </div>
+        
+            </nav>
+            <div id="top_line" ><img src="sangmyungline.JPG" ></div>
+        </header>
+
+        <aside>
+            <div id="upButton"><a href="#header"><img id="topImg"src="top.png" title="맨위로 가기"></a></div>
+           </aside>
+    <div>
+        <div>
+            <h1 class="wiki">정렬 기준</h1>
+        </div>
+        <div class="wiki_btn">
+           <button class="wiki"><a class="buttonText" href="wiki_name.html">이름</a></button>
+           <button class="wiki"><a class="buttonText" href="wiki_cate.html">카테고리</a></button>
+           <button class="wiki"><a class="buttonText" href="wiki_task.html">목적</a></button>
+           <button class="wiki"><a class="buttonText" href="wiki_tuto.html">튜토리얼⭕</a></button> 
+           <button class="wiki"><a class="buttonText" href="wiki_tutoX.html">튜토리얼❌</a></button><br>
+        </div>
+    </div>
+
+    <div id="buttons">
+        <span id="catespan">목적을 고르세요</span>
+        <button id="cateb"><a href="task_img.html">Image Classification 관련 목적</a></button>
+        <button id="cateb"><a href="task_3d.html">3D 관련 목적</a></button>
+        <button id="cateb"><a href="task_video.html">Video 관련 목적 </a></button>
+        <button id="cateb"><a href="task_mc.html">Machine Translation 관련 목적</a></button>
+        
+        
+    
+
+    </div>
+    <a id="up"></a><div id="dt1_div">
+            <br>
+            <h2 class="dt1">Video 관련 데이터 리스트</h2>
+            <h5 class="dt1">보고싶은 데이터를 클릭하세요</h5>
+        </div>
+<br><br><br>
+        <div id="ulist">
+            <ul class="wiki_dt_ul" id="wiki_dt_ul">
+                <li onclick="change34();" class="wiki_dt"><a href="#up">Ucf</a></li>
+                <li onclick="change35();" class="wiki_dt"><a href="#up">Activitynet</a></li>
+                <li onclick="change37();" class="wiki_dt"><a href="#up">Kinetics</a></li>
+                <li onclick="change38();" class="wiki_dt"><a href="#up">YouTube-8M Segments Dataset</a></li>
+                <li onclick="change39();" class="wiki_dt"><a href="#up">Davis 16</a></li>
+                <li onclick="change40();" class="wiki_dt"><a href="#up">Davis 17</a></li>
+        
+ 
+
+                
+            </ul>
+        </div>
+       
+
+    <div id="olist">
+        <div class="wiki_dt2">
+            <h2 class="dt_name" id="data_name">데이터 이름</h2>
+        </div>
+        <br>
+        
+        <div class="dt2">
+            <ol class="dt2_ol">
+                <li class="wiki_dt2" id="data1">데이터 분류</li>
+                <li class="wiki_dt2" id="data2">데이터 수</li>
+                <li class="wiki_dt2" id="data3">데이터 목적</li>
+                <li class="wiki_dt2" id="data4">데이터 설명</li>
+            </ol>
+        </div>
+   
+        <br>
+        <div class="wiki_link">
+            <h4><a href="" target="display" id="link">데이터 링크 연결하기</a></h4>
+            <h4 id="hide"><a href="" target="display" id="link_tuto">튜토리얼 링크 연결하기</a></h4><br>
+            <h4 style="font-size: 11px; color:cornflowerblue">위 연결을 누른 뒤, 👇🏻바로가기를 누르세요 </h4> <!--위와 마찬가지로 앵커-->
+            <h4><a href="#toFrame">🖱링크 바로가기🖱</a></h4>
+        </div>
+    
+</div>
+        <br>
+        <div id="bin"></div>
+        <div class="frame">
+            <a id="toFrame"></a><iframe  class="frame" name="display"></iframe>
+        </div>
+        <footer>
+            <img id="foot" src="footer.jpg">
+        </footer>
+        </body>
+        
+        
+        </html>

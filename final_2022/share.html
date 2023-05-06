@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html id="share">
+    <head>
+        <title>상명 데이터 공유 사이트 Share</title>
+        
+        <link rel="stylesheet" type="text/css" href="style-size.css"/>
+        <link rel="stylesheet" type="text/css" href="style-lay.css"/>
+        <link rel="stylesheet" type="text/css" href="style-pre.css"/>
+        <script type="text/javascript" src="share.js"></script>
+    </head>
+    <body>
+        <a id="header"></a><header>
+           
+           <nav>
+               <div id="top">
+                    <ul class="nav">
+                      <li class="li_top_img">
+                          <a href="https://www.smu.ac.kr/ko/index.do">
+                             <img id= "top_img" src="sangmyunglogo.jpg"  alt="상명대학교 데이터 공유 사이트">
+                          </a>
+                     </li>
+
+                      <li class="li_word"><a class="no2" href="final_exam.html">HOME</a></li>
+
+                      <li class="li_word"><a class="no2" href="wiki.html">Data Wiki</a></li>
+
+                      <li class="li_word"><a class="no2" href="share.html">Share Hub</a></li>
+
+                      <li class="li_word"><a class="no2" href="colo.html">Colosseum</a></li>
+
+                      <li class="li_word"><a class="no2" href="forum.html">Forum</a></li>
+
+                      <li> <a href="https://swai.smu.ac.kr/"><img id= "top_img" src="logo.JPG"></a></li>
+                   </ul>
+       
+               </div>
+        
+            </nav>
+            <div id="top_line" ><img src="sangmyungline.JPG" ></div>
+        </header>
+        <aside>
+            <div id="upButton"><a href="#header"><img id="topImg"src="top.png" title="맨위로 가기"></a></div>
+           </aside>
+        <div>
+            <h2>Share Hub를 통해 다양한 튜토리얼을 접해보세요</h2>
+            <h4>tensorflow는 해당 웹사이트로 직접 넘어갑니다</h4>
+        </div>
+        <div>
+            <span id="catespan">분류를 선택하세요</span>
+            <button id="cateb" ><a onclick="share1();">자연어(csv,text)</a></button>
+            <button id="cateb"><a onclick="share2();">이미지(jpg,png)</a></button>
+            <button id="cateb"><a onclick="share3();">동영상(avi,mp3)</a></button>
+            <button id="cateb"><a onclick="share4();">음성(wav)</a></button>
+        </div>
+
+<br>
+
+
+                                          <!--각 주 분류별 세부 분류 목록들-->
+        <div id="hidden_text" style="visibility:hidden">
+            <span id="catespan">자연어의 세부 분류를 선택하세요</span>
+            <button id="cateb"><a href="https://www.tensorflow.org/text/guide/word_embeddings?hl=ko"> 단어 임베딩 ( tensorflow )</a></button>
+            <button id="cateb"><a href="https://www.tensorflow.org/tutorials/text/word2vec?hl=ko" >Word2Vec ( tensorflow )</a></button>
+            <button id="cateb"><a href="https://www.tensorflow.org/text/tutorials/text_classification_rnn?hl=ko" >RNN을 사용한 텍스트 분류 ( tensorflow )</a></button>
+            <button id="cateb"><a href="https://www.tensorflow.org/text/tutorials/classify_text_with_bert?hl=ko" >BERT로 텍스트 분류 ( tensorflow )</a></button>
+            <button id="cateb"><a href="https://www.tensorflow.org/tutorials/text/image_captioning?hl=ko" >이미지 캡션 ( tensorflow )</a></button>
+            <button id="cateb"><a href="https://tutorials.pytorch.kr/beginner/text_sentiment_ngrams_tutorial.html" target="dis_share">torchtext 라이브러리로 텍스트 분류하기 ( pytorch )</a></button>
+
+        </div>
+        <div id="hidden_img" style="visibility:hidden">
+            <span id="catespan">이미지의 세부 분류를 선택하세요</span>
+            <button id="cateb"><a href="https://www.tensorflow.org/tutorials/images/cnn?hl=ko" >컨볼루셔널 신경망 ( tensorflow )</a></button>
+            <button id="cateb"><a href="https://www.tensorflow.org/tutorials/images/classification?hl=ko" >이미지 분류 ( tensorflow )</a></button>
+            <button id="cateb"><a href="https://www.tensorflow.org/tutorials/images/transfer_learning?hl=ko" >전이 학습 및 미세 조정 ( tensorflow )</a></button>
+            <button id="cateb"><a href="https://www.tensorflow.org/tutorials/images/data_augmentation?hl=ko" >데이터 증강 ( tensorflow )</a></button>
+            <button id="cateb"><a href="https://www.tensorflow.org/tutorials/images/segmentation?hl=ko" >이미지 분절화 ( tensorflow )</a></button>
+            <button id="cateb"><a href="https://tutorials.pytorch.kr/beginner/fgsm_tutorial.html" target="dis_share">적대적 예제 생성 ( pytorch )</a></button>
+            <button id="cateb"><a href="https://tutorials.pytorch.kr/beginner/dcgan_faces_tutorial.html" target="dis_share">DCGAN 튜토리얼 ( pytorch )</a></button>
+        </div>
+        <div id="hidden_vi" style="visibility:hidden">
+            <span id="catespan">비디오의 세부 분류는 아직 없습니다</span>
+            <button id="cateb">비디오 분류</button>
+            <button id="cateb">비디오 분류</button>
+            <button id="cateb">비디오 분류</button>
+            <button id="cateb">비디오 분류</button>
+        </div>
+        <div id="hidden_wav" style="visibility:hidden">
+            <span id="catespan">음성의 세부 분류를 선택하세요</span>
+            <button  id="cateb"><a href="https://www.tensorflow.org/tutorials/audio/simple_audio?hl=ko" >단순한 오디오 인식 ( tensorflow )</a></button>
+            <button  id="cateb"><a href="https://www.tensorflow.org/tutorials/audio/transfer_learning_audio?hl=ko" >오디오 인식을 위한 전이 학습 ( tensorflow )</a></button>
+            <button  id="cateb"><a href="https://tutorials.pytorch.kr/beginner/audio_resampling_tutorial.html" target="dis_share">Audio Resampling ( pytorch )</a></button>
+            <button  id="cateb"><a href="https://tutorials.pytorch.kr/beginner/audio_feature_extractions_tutorial.html" target="dis_share">Audio Feature Extractions ( pytorch )</a></button>
+            <button  id="cateb"><a href="https://tutorials.pytorch.kr/beginner/audio_datasets_tutorial.html" target="dis_share">Audio Datasets ( pytorch )</a></button>
+            <button  id="cateb"><a href="https://tutorials.pytorch.kr/intermediate/speech_recognition_pipeline_tutorial.html" target="dis_share">Speech Recognition With Wav2Vec2 ( pytorch )</a></button>
+            
+        </div>
+
+<div>
+    <h2>pytorch는 👇🏻 바로 볼 수 있습니다</h2>
+</div>
+
+
+<div class="frame">
+    <a id="toFrame"></a><iframe  class="frame" name="dis_share"></iframe>
+</div>
+
+
+
+
+
+
+
+
+
+       <br>
+       <br>
+       <br>
+        <div>
+            <a href="https://www.tensorflow.org/tutorials?hl=ko"><img id="logo"src="ten.jpg">텐서플로우 가기</a>
+            <a href="https://tutorials.pytorch.kr/"><img id="logo" src="py.png">파이토치 가기</a>
+        </div>
+        </body>
+        <foot>
+            <img id="foot_share" src="footer.jpg">
+        </foot>
+        </html>

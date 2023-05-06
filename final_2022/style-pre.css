@@ -1,0 +1,128 @@
+/*폰트 사이즈, 컬러, 배경 등 꾸미기용*/
+ul{list-style: none;
+    }
+
+.li_word{text-align: center;
+        font-size: 24px;
+        
+        }
+
+a.no{text-decoration: none;
+color: rgb(255, 255, 255);}
+
+a.no2{text-decoration: none;
+    color: rgb(14, 14, 80);}
+
+    
+ol#notice, ol#pop{list-style-type: disc;}
+
+li.notice,li.pop, a.pop, a.notice{font-size: 20px; text-decoration: none;}
+
+h1{font-size: 35px;}
+
+li.wiki_dt{
+    list-style: none;
+}
+
+li.wiki_dt2{
+    text-align: left;
+}
+
+ol.dt2_ol{list-style-type:square;}
+
+button.wiki{
+    background-color: rgb(15, 51, 171);
+    border-radius: 5px;
+    border-style: none;
+
+}
+
+a.buttonText{color: aliceblue;}
+
+button.wiki :hover{
+   color: rgb(132, 243, 200);
+}
+
+h5.dt1{color:rgb(85, 85, 181)}
+
+a#link, a#link_tuto a#align,a{text-decoration: none;}
+
+a{text-decoration: none;}
+
+#cateb{
+    border-radius: 5px;
+    background-color:rgb(143, 165, 255);
+    color: rgb(0, 0, 0);
+    border-style:none;
+}
+
+#cateb :hover{color:lightgreen;
+}
+
+#catespan{
+    color: rgb(85, 85, 181);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+html#colose{
+    background-image: url("shang.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: hue;
+    color: rgb(44, 31, 144);
+}
+
+html#home{
+    background-image: url("sangmyungback.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: hue;
+    color:aliceblue;
+}
+
+html#wiki{
+    background-image: url("snagm.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: hue;
+    color:rgb(4, 39, 69);
+}
+
+html#share{
+    background-image: url("sang2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: hue;
+    color:rgb(10, 25, 94);
+}
+
+html#forum{
+    background-image: url("sang3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: hue;
+    color:rgb(255, 250, 239);
+}
+
+.table{
+    border-style: none;
+    border-radius: 5px;
+    border-color: aliceblue;
+    background-color: aliceblue;
+    color: rgb(19, 19, 108);
+    
+}
+
+#tr_f,tr,td,th{
+    border-style: none;
+}
+
+#bold_font{
+    font-weight:bold;
+}

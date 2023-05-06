@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        table{background-color: rgb(99, 194, 167);
+              color: black;
+              border-style: dashed;
+              border-color: azure;}
+        
+        th{background-color: rgb(29, 81, 64);
+           color: aliceblue;
+           border-style: none;}
+      
+        button{background-color: aquamarine;
+           color: black;
+          border-style: none;
+          border-radius: 5px;
+          font-weight: bold;}
+
+       html{background-color: rgb(249, 249, 207);}
+   
+       </style>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   <title>board</title>
+  </head>
+  <body>
+    <% 
+      console.log("rows : " + JSon.stringify(rows));
+      console.log("rows : " + rows.length);
+      //for(var i=0; i<rows.length; i++){
+       var column = rows[0];      
+    %>
+    <table border="1" style="width:600px">
+     <caption style="color:seagreen;  font-size: 20px; font-weight: bolder;">게시판</caption>
+     <colgroup>
+    <col width="15%"/>
+    <col width="*%"/>
+    </colgroup>
+    <tbody>
+
+      <tr>
+          <th>작성자</th>
+          <td><%=column[3]%></td>
+     </tr>
+
+     <tr>
+          <th>제목</th>
+          <td><%=column[1]%></td>
+     </tr>
+
+     <tr>
+          <th>내용</th>
+          <td><%=column[2]%></td>
+     </tr>
+
+     <tr>
+         <th>날짜</th>
+         <td><%=column[4]%></td>
+    </tr>
+
+    </tbody>
+  </table>
+  <a href="#" onclick="history.back(-1)"><button>돌아가기</button></a>
+
+  <a href="/bbs/delete?brdno=<%=column[0]%>"><button>삭제</button></a>
+  <a href="/bbs/form?brdno=<%column[0]%>"><button>수정</button></a>
+
+  </body>
+
+</html>

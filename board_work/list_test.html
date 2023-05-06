@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+         table{background-color: rgb(99, 194, 167);
+               color: black;
+               border-style: dashed;
+               border-color: azure;}
+         
+         th{background-color: rgb(29, 81, 64);
+            color: aliceblue;
+            border-style: none;}
+    
+        button{background-color: aquamarine;
+               color: black;
+              border-style: none;
+              border-radius: 5px;
+              font-weight: bold;}
+
+        html{background-color: rgb(249, 249, 207);}
+    
+        </style>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>게시판테스트</title>
+      </head>
+      <body>
+        <a href="/bbs/form"><button>글쓰기</button></a>
+    
+        <table border="1" style="width:1024px">
+        <caption style="color:seagreen; font-size: 20px; font-weight: bolder;">게시판</caption>
+        <colgroup>
+           <col width='*%'/>
+           <col width='*%'/>
+           <col width='*%'/>
+           <col width='*%'/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>등록자</th>
+            <th>등록일</th>
+          </tr>
+        </thead>
+        <tbody>
+        <% 
+            //console.log("rows :" +JSON.stringify(rows));
+            //console.log("rows :"+rows.length);
+          for(var i =0; i<rows.length; i++){
+          column = rows[i];
+        %>
+          <tr>
+          <td><a href="/bbs/read?brdno=<%=column[0]%>"><%=column[0]%></a></td>
+          <td><a href="/bbs/read?brdno=<%=column[0]%>"><%=column[1]%></a></td>
+          <td><%=column[2]%></td>
+          <td><%=column[3]%></td>
+        </tr>
+        <% 
+           }
+        %>
+         </tbody>
+      </table>
+      <a href="/bbs/search"><button>제목 검색</button></a>
+      <a href="/bbs/search"><button>내용 검색</button></a>
+      <a href="/bbs/search"><button>작성자 검색</button></a>
+      </body>
+    </html>
+    

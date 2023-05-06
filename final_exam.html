@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html id="home">
+    <head>
+        <title>상명 데이터 공유 사이트</title>
+        
+        <link rel="stylesheet" type="text/css" href="style-size.css"/>
+        <link rel="stylesheet" type="text/css" href="style-lay.css"/>
+        <link rel="stylesheet" type="text/css" href="style-pre.css"/>
+        <link rel="javascript" type="text/javascript" href="data.js"/>
+        <link rel="javascript" type="text/javascript" href="colos.js"/>
+
+        <script type="text/javascript"> //슬라이드쇼
+             var index =0;
+              window.onload = function(){
+                                            slideShow();
+                                        }
+
+              function slideShow(){
+                               var i;
+                               var x= document.getElementsByClassName("slide1");
+                          
+                               for(i=0; i<x.length; i++){
+
+                                        x[i].style.display = "none";
+
+                                                   }
+                                index++;
+
+                               if(index > x.length ){
+
+                                        index = 1;
+
+                                                    }
+
+                         x[index-1].style.display = "block";
+                            setTimeout(slideShow,5000);
+                    }
+       </script>
+    </head>
+    <body>
+        <a id="header"></a><header>
+           
+           <nav>
+               <div id="top">
+                    <ul class="nav">
+                      <li class="li_top_img">
+                          <a href="https://www.smu.ac.kr/ko/index.do"> <!--메인페이지 가는 것은 HOME이 기능하므로 상명대 홈페이지로 가게 했습니다-->
+                             <img id= "top_img" src="sangmyunglogo.jpg"  alt="상명대학교 데이터 공유 사이트">
+                          </a>
+                     </li>
+
+                      <li class="li_word"><a class="no" href="final_exam.html">HOME</a></li>
+
+                      <li class="li_word"><a class="no" href="wiki.html">Data Wiki</a></li>
+
+                      <li class="li_word"><a class="no" href="share.html">Share Hub</a></li>
+
+                      <li class="li_word"><a class="no" href="colo.html">Colosseum</a></li>
+
+                      <li class="li_word"><a class="no" href="forum.html">Forum</a></li>
+
+                      <li> <a href="https://swai.smu.ac.kr/"><img id= "top_img" src="logo.JPG"></a></li>
+                   </ul>
+       
+               </div>
+        
+            </nav>
+            <div id="top_line" ><img src="sangmyungline.JPG" ></div>
+        </header>
+        
+        
+          <div id="slide_img">
+            <section>
+            <img class="slide1" src="01.png">
+              
+              
+            <img class="slide1" src="02.png">
+         
+          
+            <img class="slide1" src="03.png">
+          
+          
+            <img class="slide1" src="04.png">
+          
+          
+            <img class="slide1" src="05.png">
+
+          </section>
+          </div>
+             
+          
+        <div>
+         <section  class="notice">
+         <h1 class="notice">공지사항</h1>
+         <div>
+           <ol id="notice">
+             <li class="notice"><a class="no" href="wiki.html" title="보기" >[DATASET] VoxCeleb / Sound</a></li>
+             <li class="notice"><a class="no" href="wiki.html" title="보기" >[DATASET] Scape / 3-D Image</a></li>
+             <li class="notice"><a class="no" href="wiki.html" title="보기" >[DATASET] Faust / 3-D Image</a></li>
+             <li class="notice"><a class="no" href="colo.html" title="보기" ><span >[대회] 도로위 인식의 최강자 선발 대회 / kitti / 2022.06.01~2022.07.01</span></a></li>
+             <li class="notice"><a class="no" href="colo.html" title="보기" ><span >[대회] Did you understand what I said? / wmt19 / 2022.08.01~2022.09.01</span></a></li>
+            
+           </ol>
+         </div>
+
+         </section>
+       <aside>
+        <div id="upButton"><a href="#header"><img id="topImg"src="top.png" title="맨위로 가기"></a></div>
+       </aside>
+
+       </div>
+
+       <div class="pop">
+        <section  class="pop">
+        <h1 class="pop">인기 많은 글</h1>
+        <div>
+          <ol id="pop">
+            <li class="pop"><a class="no" href="wiki.html" title="보기" >[DATASET] Imagenet / Image</a></li>
+            <li class="pop"><a class="no" href="wiki.html" title="보기" >[DATASET] YouTube-8M / Video</a></li>
+            <li class="pop"><a class="no" href="wiki.html" title="보기" >[DATASET] Coco / Image</a></li>
+            <li class="pop"><a class="no" href="colo.html" title="보기" >[대회] 천하제일 얼굴 인식대회 / celebA / 2022.04.01~2022.05.01  </a></li>
+            <li class="pop"><a class="no" href="colo.html" title="보기" >[대회] 도로위 인식의 최강자 선발 대회 / kitti / 2022.06.01~2022.07.01</a></li>
+            <li class="pop"><a class="no" href="colo.html" title="보기" >[대회] Did you understand what I said? / wmt19 / 2022.08.01~2022.09.01</a></li>
+            <li class="pop"><a class="no" href="forum.html" title="보기" >공지사항 / 2022.05.08</a></li>
+            <li class="pop"><a class="no" href="forum.html" title="보기" >튜토리얼 공지 / 2022.05.19</a></li>
+            <li class="pop"><a class="no" href="forum.html" title="보기" >공모전 종료 안내 / 2022.05.14</a></li>
+           
+          </ol>
+        </div>
+
+        </section>
+
+
+      </div>
+        
+        
+    </body>
+    <foot>
+      <img id="foot_home" src="footer.jpg">
+  </foot>
+</html>

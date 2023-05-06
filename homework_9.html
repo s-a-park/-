@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>9주차 과제</title>
+        <style>
+            table{
+                text-align: center;
+                background-color: lightblue;
+                border-style: dotted;
+                border-color: cornflowerblue;
+                width: 500px;
+                height: 100px;
+                 }
+            td,tr{border-style: none;}
+            body{color: rgb(34, 4, 126);}
+
+
+        </style>
+    </head>
+    <body>
+    <table border="1">
+        <script type="text/javascript">
+  
+           var value = prompt("피보나치 수열 한계 값을 입력하세요");
+        
+            document.write("한계값은"+" "+value+"입니다");
+            document.write("<br><br>");
+            document.write("<tr>");
+            document.write("<td> 피보나치 수열 값 </td>");
+                
+            change = parseInt(value);
+            var run = 1;
+            var run2 =1;
+
+            while (run2 <= change){
+                document.write("<td>");
+                document.write(run2);
+                document.write("</td>");
+
+                sum = run + run2;
+                run = run2;
+                run2 = sum;
+            }
+
+            document.write("</tr>");
+
+
+        </script>
+    </table>
+</body>
+</html>

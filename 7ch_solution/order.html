@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title> Order Page </title>
+<link rel="stylesheet" type="text/css" href="style-size.css"/>
+<link rel="stylesheet" type="text/css" href="style-layout.css"/>
+<link rel="stylesheet" type="text/css" href="style-presentation.css"/>
+
+<script type="text/javascript">
+    
+    function sum(){
+      var num1 = document.getElementById("num1").value;
+      var total1 = parseInt(num1) * 27000;
+
+      document.getElementById("total1").value = total1;
+       
+      var num2 = document.getElementById("num2").value;
+      var total2 = parseInt(num2) * 21000;
+
+      document.getElementById("total2").value = total2;
+
+      var num3 = document.getElementById("num3").value;
+      var total3 = parseInt(num3) * 28000;
+
+      document.getElementById("total3").value = total3;
+
+      var num4 = document.getElementById("num4").value;
+      var total4 = parseInt(num4) * 24000;
+
+      document.getElementById("total4").value = total4;
+
+      var num5 = document.getElementById("num5").value;
+      var total5 = parseInt(num5) * 27000;
+
+      document.getElementById("total5").value = total5;
+
+      var num6 = document.getElementById("num6").value;
+      var total6 = parseInt(num6) * 29000;
+
+      document.getElementById("total6").value = total6;
+
+
+      var num7 = document.getElementById("num7").value;
+      var total7 = parseInt(num7) * 25000;
+
+      document.getElementById("total7").value = total7;
+
+      var num8 = document.getElementById("num8").value;
+      var total8 = parseInt(num8) * 30000;
+
+      document.getElementById("total8").value = total8;
+
+      var num9 = document.getElementById("num9").value;
+      var total9 = parseInt(num9) * 35000;
+
+      document.getElementById("total9").value = total9;
+
+      var num10 = document.getElementById("num10").value;
+      var total10 = parseInt(num10) * 32000;
+
+      document.getElementById("total10").value = total10;
+
+      var num11 = document.getElementById("num11").value;
+      var total11 = parseInt(num11) * 30000;
+
+      document.getElementById("total11").value = total11;
+
+      var num12 = document.getElementById("num12").value;
+      var total12 = parseInt(num12) * 27000;
+
+      document.getElementById("total12").value = total12;
+      
+     var final_total = total1 + total2 +total3 + total4 + total5 + total6 +total7 + total8 + total9 + total10 + total11 + total12;
+
+     document.getElementById("final_total").value = final_total;
+
+    };
+
+    
+        
+       
+    function text(){
+        var localStorage = window.localStorage;
+        
+            var ID = window.localStorage.key(0);
+            
+            if(ID){
+            var text = ID+"님의 주문 내역 입니다."
+        }
+
+        else{var text = "주문 내역서";}
+        
+        
+        
+        
+        text += "<table border=1 style=background-color:lightblue;> <tr> <th> 주문한 책 이름</th> <th> 주문 수량 </th> <th> 합계 </th> </tr>";
+
+            var num1 = document.getElementById("num1").value;
+            var total1 = parseInt(num1) * 27000;
+
+         if(num1 != 0){
+            text += "<tr> <td>컴퓨터와 IT기술의 이해 [개정판-2판]</td> <td>"+num1+"</td> <td>"+total1+"</td></tr>";
+        };
+        
+        var num2 = document.getElementById("num2").value;
+        var total2 = parseInt(num2) * 21000;
+
+        if(num2 != 0){
+            text += "<tr> <td>소셜미디어의 이해와 활용</td> <td>"+num2+"</td> <td>"+total2+"</td></tr>";
+        };
+
+            var num3 = document.getElementById("num3").value;
+            var total3 = parseInt(num3) * 28000;
+
+        if(num3 != 0){
+            text += "<tr> <td>비즈니스 정보 시스템</td> <td>"+num3+"</td> <td>"+total3+"</td></tr>";
+        };
+
+            var num4 = document.getElementById("num4").value;
+            var total4 = parseInt(num4) * 24000;
+
+        if(num4 != 0){
+            text += "<tr> <td>(알기 쉬운) 알고리즘</td> <td>"+num4+"</td> <td>"+total4+"</td></tr>";
+        };
+
+            var num5 = document.getElementById("num5").value;
+            var total5 = parseInt(num5) * 27000;
+
+        if(num5 != 0){
+            text += "<tr> <td>선형대수학 Express</td> <td>"+num5+"</td> <td>"+total5+"</td></tr>";
+        };
+
+            var num6 = document.getElementById("num6").value;
+            var total6 = parseInt(num6) * 29000;
+
+        if(num6 != 0){
+            text += "<tr> <td>루비 프로그래밍 언어</td> <td>"+num6+"</td> <td>"+total6+"</td></tr>";
+        };
+
+            var num7 = document.getElementById("num7").value;
+            var total7 = parseInt(num7) * 25000;
+
+        if(num7 != 0){
+            text += "<tr> <td>멀티미디어 배움터 2.0</td> <td>"+num7+"</td> <td>"+total7+"</td></tr>";
+        };
+
+            var num8 = document.getElementById("num8").value;
+            var total8 = parseInt(num8) * 30000;
+
+        if(num8 != 0){
+            text += "<tr> <td>네트워크 보안 에센셜(4판)</td> <td>"+num8+"</td> <td>"+total8+"</td></tr>";
+        };
+
+            var num9 = document.getElementById("num9").value;
+            var total9 = parseInt(num9) * 35000;
+
+        if(num9 != 0){
+            text += "<tr> <td>회로이론</td> <td>"+num9+"</td> <td>"+total9+"</td></tr>";
+        };
+
+            var num10 = document.getElementById("num10").value;
+            var total10 = parseInt(num10) * 32000;
+
+        if(num10 != 0){
+            text += "<tr> <td>Big Java</td> <td>"+num10+"</td> <td>"+total10+"</td></tr>";
+        };
+
+            var num11 = document.getElementById("num11").value;
+            var total11 = parseInt(num11) * 30000;
+
+
+        if(num11 != 0){
+            text += "<tr> <td>경영학의 이해 (9/e)</td> <td>"+num11+"</td> <td>"+total11+"</td></tr>";
+        };
+
+
+            var num12 = document.getElementById("num12").value;
+            var total12 = parseInt(num12) * 27000;
+
+        if(num12 != 0){
+            text += "<tr> <td>컴퓨터 배움터 </td> <td>"+num12+"</td> <td>"+total12+"</td></tr>";
+        };
+       
+        var final_total = total1 + total2 +total3 + total4 + total5 + total6 +total7 + total8 + total9 + total10 + total11 + total12;
+    
+    
+    
+        text += "<td>총 합계</td> <td></td> <td>"+final_total+"</td>";
+        document.write(text);
+    };
+   
+    
+    
+</script>
+</head>
+<body id="order">
+<div class="head"> 서적 주문 양식 </div>
+<form action="">
+    <p> 주문서 </p>
+    <table>
+        <tr> <th> 책 제목 </th> <th> 가격 </th> <th> 수량 </th> <th> 합계 </th> </tr>
+        <tr>
+            <td id="1"> 컴퓨터와 IT기술의 이해 [개정판-2판] </td> <td> 27,000원 </td>
+            <td> <input id="num1" onkeyup="sum();" type="text" size= "2" value="0"/> </td>
+            <td> <input id="total1" type="text" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> 소셜미디어의 이해와 활용 <td> 21,000원 </td>
+            <td> <input id="num2" onkeyup="sum();" type="text" size= "2" value="0"/> </td>
+            <td> <input id="total2" type="text" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> 비즈니스 정보 시스템 </td> <td> 28,000원 </td>
+            <td> <input id="num3" onkeyup="sum();" type="text" size= "2" value="0"/> </td>
+            <td> <input id="total3" type="text" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> (알기 쉬운) 알고리즘 </td> <td> 24,000원 </td>
+            <td> <input id="num4" onkeyup="sum();"type="text" size= "2" value="0"/> </td>
+            <td> <input id="total4" type="text" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> 선형대수학 Express </td> <td> 27,000원 </td>
+            <td> <input id="num5" onkeyup="sum();"type="text" size= "2" value="0"/> </td>
+            <td> <input id="total5" type="text" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> 루비 프로그래밍 언어 </td> <td> 29,000원 </td>
+            <td> <input id="num6" onkeyup="sum();" type="text" size= "2" value="0"/> </td>
+            <td> <input  id="total6"type="text" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> 멀티미디어 배움터 2.0 </td> <td> 25,000원 </td>
+            <td> <input id="num7" onkeyup="sum();" type="text" size= "2" value="0"/> </td>
+            <td> <input id="total7" type="text" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> 네트워크 보안 에센셜(4판) </td> <td> 30,000원 </td>
+            <td> <input id="num8" onkeyup="sum();" type="text" size= "2" value="0"/> </td>
+            <td> <input id="total8" type="text" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> 회로이론 </td> <td> 35,000원 </td>
+            <td> <input id="num9" onkeyup="sum();" type="text" size= "2" value="0"/> </td>
+            <td> <input id="total9" type="text" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> Big Java </td> <td> 32,000원 </td>
+            <td> <input id="num10" onkeyup="sum();" type="text" size= "2" value="0"/> </td>
+            <td> <input id="total10" type="text" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td> 경영학의 이해 (9/e) </td> <td> 30,000원 </td>
+            <td> <input id="num11" onkeyup="sum();" type="text" size= "2" value="0"/> </td>
+            <td> <input id="total11" type="text" size= "6" value="0"/> 원</td>
+        </tr>
+        <tr>
+            <td>  컴퓨터 배움터 </td> <td> 27,000원 </td>
+            <td> <input id="num12" onkeyup="sum();" type="text" size= "2" value="0"/> </td>
+            <td> <input id="total12" type="text" size= "6" value="0"/> 원</td>
+        </tr>
+        
+        
+        <tr>
+            <td> 총 합계 </td> <td> &nbsp; </td>
+            <td>  </td>
+            <td> <input id="final_total" type="text" size= "6" value="0"/> 원</td>
+        </tr>
+    </table> <br />
+    
+    <input type="reset" value="초기화"/>
+    <input id="all" type="button" value="주문하기" onclick="text();"/>
+</form>
+</body>
+</html>
