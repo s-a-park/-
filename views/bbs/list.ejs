@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+
+    
+
+<title>게시판</title>
+<style>
+    
+html{background-color:rgb(255, 252, 223);}
+
+   div.col-lg-9{text-align: center;
+    margin-left: 190px;
+position: relative;}
+   
+table,th,td,tr{ border-color: rgb(255, 255, 255);}
+   </style>
+</head>
+
+<body>
+    <div class="col-lg-9">
+        <hr>
+        <H2 style="color:dodgerblue ;">게시판</H2>
+        <hr>
+    <div class="row">
+    <div class="container">
+    <table border="1" class="table table-hover">
+        <colgroup>  <!--길이 자동-->
+            <col width='*%' />
+            <col width='*%' />
+            <col width='*%' />
+            <col width='*%' />
+            <col width='*%' />
+        </colgroup>
+        <thead>     <!--내용-->
+            <tr>
+                <th style="background-color:paleturquoise ;">번호</th>
+                <th style="background-color:paleturquoise ;">작성자</th>
+                <th style="background-color:paleturquoise ;">제목</th>
+                <th style="background-color:paleturquoise ;">작성일</th>
+                <th style="background-color:paleturquoise ;">조회수</th>
+                <th style="background-color:paleturquoise ;">삭제여부</th>
+            </tr>
+        </thead>
+        <tbody>
+        <%  <!--내용-->
+                  var colum;
+                for(var i=0; i<rows.rows.length; i++) {
+                 column = rows.rows[i];
+
+                 console.log(column[0]);
+        %>
+            <tr>
+                <td style="background-color:rgb(225, 255, 225)"><a href='/bbs/readcount?brdno=<%=column[0]%>'><%=column[0]%></a></td>   <!--클릭 시 게시판 뷰로 이동-->
+                <td style="background-color:rgb(225, 255, 225)"><a href='/bbs/readcount?brdno=<%=column[0]%>'><%=column[2]%></a></td>
+                <td style="background-color:rgb(225, 255, 225)"><a href='/bbs/readcount?brdno=<%=column[0]%>'><%=column[1]%></a></td>
+                <td style="background-color:rgb(225, 255, 225)">
+                    <%=column[3]%></a>
+                </td>
+                <td style="background-color:rgb(225, 255, 225)"><%=column[4]%></a></td>
+                <td style="background-color:rgb(225, 255, 225)"><%=column[5]%></a></td>
+            </tr>
+        <%
+             }
+        %>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" align="center">
+                    <%if( currentPage > firstPage ){%>
+                    <a href="/bbs/list?currentPage=<%currentPage-1%>">⩤</a>
+                    <%}else{%>
+                    <a href="javascript:alert('처음페이지입니다.')">⩤</a>
+                    <%}%>
+
+                    <%for(var i=firstPage;i<= lastPage; i++){%>
+                        <%if(i>totalPage) break;%>
+                        <a <%if(currentPage == i){%>class="numStyle"<%}%> href="/bbs/list?currentPage=<%=i%>">[<%=i%>]</a>
+                        <%}%>
+                        <%if( currentPage < totalPage ){%>
+                            <a href="/bbs/list?currentPage=<%=currentPage+1%>">⩥</a>
+                            <%}else{%>
+                                <a href="javascript:alert('마지막페이지입니다.')">⩥</a>
+                                <%}%>
+                    
+
+                </td>
+        </tr>
+
+
+        </tfoot>
+    </table>
+    <div class="row">
+        <div class="col-md-6">
+        <a href="/bbs/form"><button style="background-color:rgb(51, 123, 248); color: rgb(255, 255, 255); border-radius: 5px; border-style:none;">글쓰기</button></a>  <!--글쓰기 버튼 클릭시 /bbs/form으로 가라-->
+    </div>
+    <div class="col-md-6">  <!--검색 기능-->
+		<form method="get" action="/bbs/search">
+		<div class="input-group">
+            <select name="brdsearchoption">  <!--검색 옵션을 brdsearchoption에 저장-->
+                <option value="writer">작성자</option>
+                <option value="title">제목</option>
+                <option value="content">내용</option>
+                <option value="ticontent">제목+내용</option>
+            </select>
+            <input class="form-control" type="text" name="brdsearch" placeholder="Search for..."> <!--검색 내용을 brdsear에 저장-->
+            <span class="input-group-append">
+            <button class="btn btn-primary" type="submit">확인 <!--확인 버튼 클릭시 /bbs/search로 가라-->
+                <i class="fa fa-search"></i>
+            </button>
+            </span>
+        </div>
+        </form>
+	</div>
+   
+	</div>
+    </div>
+    </div>
+    </div>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+</body>
+</html>
