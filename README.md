@@ -1,8 +1,8 @@
 # Web
-HTML / CSS / JS / NODE.JS 등 웹프로그래밍 언어 공부 및 프로젝트 
-**web_software은 데이터 공유 사이트 제작 및 중간고사, 과제 모음
-** homework는 자잘한 과제 등의 모음
-** node는 게시판 페이지 만들기 모음
++ HTML / CSS / JS / NODE.JS 등 웹프로그래밍 언어 공부 및 프로젝트 
++ web_software은 데이터 공유 사이트 제작 및 중간고사, 과제 모음
++ homework는 자잘한 과제 등의 모음
++ node는 게시판 페이지 만들기 모음
 
 ## 🐾7ch_solution / 중간 이후 과제는 기본 과제
 ## 🐾Boardwork는 Node.js를 이용한 게시판 만들기
